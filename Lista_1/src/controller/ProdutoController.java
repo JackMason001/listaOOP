@@ -2,6 +2,11 @@ package controller;
 
 import model.Produto;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class ProdutoController {
     public static void main(String[] args) {
         Produto p1 = new Produto();
@@ -22,5 +27,23 @@ public class ProdutoController {
 
         System.out.println(p1.getNome());
         System.out.println(p2.getNome());
+
+        List<Produto> produtosList = new ArrayList<>();
+        produtosList.add(p1);
+        produtosList.add(p2);
+        produtosList.add(p3);
+        produtosList.add(p4);
+        produtosList.add(p5);
+        produtosList.add(p6);
+
+
+        System.out.println("\nLista de produtos:");
+        System.out.println(produtosList);
+
+        System.out.println(produtosList.get(Collections.binarySearch(
+                produtosList,
+                new Produto("Sintetizador",2000.00,"Sintetizador",2),
+                Comparator.comparing(Produto::getNome)
+        )));
     }
 }

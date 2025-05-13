@@ -1,6 +1,7 @@
 package model;
 
 public class Carro {
+    private int id;
     private String marca;
     private String modelo;
     private int anoFabricacao;
@@ -8,13 +9,23 @@ public class Carro {
     public Carro() {
     }
 
-    public Carro(String marca, String modelo, int anoFabricacao) {
+    public Carro(int id,String marca, String modelo, int anoFabricacao) {
+        this.id = id;
         this.marca = marca;
         this.modelo = modelo;
         this.anoFabricacao = anoFabricacao;
     }
 
     //Para criar o Carro carro6 = new Carro("Honda"); 'e necessario criar um construtor separado.
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Carro(String marca) {
         this.marca = marca;
@@ -47,7 +58,8 @@ public class Carro {
     @Override
     public String toString() {
         return "\nCarro{" +
-                "marca='" + marca + '\'' +
+                "id=" + id +
+                ", marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", anoFabricacao=" + anoFabricacao +
                 '}';

@@ -1,19 +1,29 @@
 package model;
 
 public class Funcionario {
+    private int id;
     private String nome;
     private double salario;
 
     public Funcionario() {
     }
 
-    public Funcionario(String nome, double salario) {
+    public Funcionario(int id, String nome, double salario) {
+        this.id = id;
         this.nome = nome;
         this.salario = salario;
     }
 
     public Funcionario(String nome) {
         this.nome = nome;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public double getSalario() {
@@ -34,8 +44,9 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
+        return "\nFuncionario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", salario=" + salario +
                 '}';
     }

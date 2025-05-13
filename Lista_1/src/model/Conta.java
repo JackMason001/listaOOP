@@ -2,12 +2,22 @@ package model;
 
 public class Conta {
     private double saldo;
+    private int id;
 
     public Conta() {
     }
 
-    public Conta(double saldo) {
+    public Conta(int id, double saldo) {
+        this.id = id;
         this.saldo = saldo;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public double getSaldo() {
@@ -29,8 +39,9 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Conta{" +
+        return "\nConta{" +
                 "saldo=" + saldo +
+                ", id=" + id +
                 '}';
     }
 }
