@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lista_1/Lista_1.iml" filepath="$PROJECT_DIR$/Lista_1/Lista_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lista_2/Lista_2.iml" filepath="$PROJECT_DIR$/Lista_2/Lista_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lista_3/Lista_3.iml" filepath="$PROJECT_DIR$/Lista_3/Lista_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lista_4/Lista_4.iml" filepath="$PROJECT_DIR$/Lista_4/Lista_4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Listas.iml" filepath="$PROJECT_DIR$/Listas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Revisao/Revisao.iml" filepath="$PROJECT_DIR$/Revisao/Revisao.iml" />
     </modules>
   </component>
 </project>
