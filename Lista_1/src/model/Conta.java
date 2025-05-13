@@ -3,6 +3,13 @@ package model;
 public class Conta {
     private double saldo;
 
+    public Conta() {
+    }
+
+    public Conta(double saldo) {
+        this.saldo = saldo;
+    }
+
     public double getSaldo() {
         return saldo;
     }
@@ -14,6 +21,10 @@ public class Conta {
     }
     public void atualiza(double taxa){
         this.saldo *= taxa;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     @Override

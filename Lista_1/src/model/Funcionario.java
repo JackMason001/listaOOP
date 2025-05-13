@@ -12,6 +12,10 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public Funcionario(String nome) {
+        this.nome = nome;
+    }
+
     public double getSalario() {
         return salario;
     }

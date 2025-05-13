@@ -17,6 +17,10 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public Produto(String nome) {
+        this.nome = nome;
+    }
+
     public double getValor() {
         return valor;
     }
